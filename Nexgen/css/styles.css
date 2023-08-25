@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
+body
+{    
+    background-color: skyblue;
+}
+
+header{
+        display: inline-block;
+}
+#logo_header
+{
+    display: inline-block;
+}
+
+.main-nav {    
+    display: flex;
+}
+.main-nav a{
+    font-family: 'Inter', sans-serif;
+    color: white;
+
+}
+.push {
+    margin-left: auto;
+}
+
+/*https://fonts.google.com/specimen/Inter*/
+    
