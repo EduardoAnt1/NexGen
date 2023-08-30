@@ -9,7 +9,7 @@ body, html {
 }
 
 body {
-    background-color: skyblue;
+    background-color: white;
     font-family: 'Inter', sans-serif;
 
 }
@@ -111,6 +111,127 @@ header a:hover {
     font-weight: 700;
     font-size: medium;
 }
+
+#casa_in{
+    width: 100%;
+    height: 1000px;
+    margin-left: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#casa_in h2{
+    color: #DB562D;
+    margin-bottom: 40px;
+}
+
+#video{
+    margin-left: px;
+    background-color: #DB562D;
+    width: 1239px;
+    height: 705px;
+}
+
+#sobre{
+    background-image: url(/Site_institucional-main/Nexgen/assets/image/fundo_sobre_nos.png);
+    width: 100%;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#texto{
+    width: 40%;
+    border: 1px solid black;
+    padding-right: 200px;
+}
+
+#texto h2{
+    color: white;
+    text-align: center;
+    padding-bottom: 20;
+}
+
+#texto p{
+    color: white;
+    text-align: justify;
+}
+
+#funcionarios{
+    border: 1px solid black;
+}
+
+.slider input {
+    display: none;
+}
+
+.slider {
+    display: block;
+    height: 293px;
+    width: 500px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+}
+
+.slider label {
+    background-color: white;
+    bottom: 0px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+    border-radius: 100%;
+    margin-top: 20px;
+}
+
+.slider li:nth-child(1) label {
+    left: 220px;
+}
+
+.slider li:nth-child(2) label {
+    left: 240px;
+}
+
+
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+#propaganda{
+    width: 100%;
+    height: 1080;
+    background-color: #DB562D;
+}
+
 
 
 

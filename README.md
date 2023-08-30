@@ -1,5 +1,2 @@
-Site institucional do projeto NEXGEN, projeto teorico de automação residencial facilitada.
-
-todo o sistema foi desenvolvido em DWEB1,materia do curso de Engenharia de Computação do Cefet Leopoldina.
-
-Professora orientadora Natalia Damata
+Nexgen
+https://prod.liveshare.vsengsaas.visualstudio.com/join?EF64DD393C21F9C1A4D285D720A5672E0808
