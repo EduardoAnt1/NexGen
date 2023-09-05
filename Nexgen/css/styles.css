@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+
+
 body, html {
   margin:0;
   padding:0;
-  box-sizing: border-box;
-  width:100vw;
-  height:100vh;
-  background-color: skyblue;
+  width:100%;
+  height:100%;
 }
 
 body {
     background-color: white;
     font-family: 'Inter', sans-serif;
+
 }
 
 header {
@@ -21,13 +22,12 @@ header {
 }
 
 #container {
-    background: url('assets/image/background_casa_resized.png');
+    background-image: url(/Site_institucional-main/Nexgen/assets/image/background_casa_resized.png);
     width: 100%;
     height: 780px;
-    box-sizing: border-box;
-    background-color: #cccccc;
     background-repeat: no-repeat;
     background-size:cover;
+
 }
 
 #logo_header {
@@ -35,20 +35,16 @@ header {
     padding-top: 0;
 }
 
-
 .main-nav {
-    margin: 0;  
-    display: flexbox;
-    box-sizing: border-box;
-    width: 100%;
-    min-width: 100vw;
-    padding: 1em;
-    background-color: black;    
+    margin: 0;
+    display: flex;
+    padding-left: 100px; 
 }
 
 a {
     color: white;
-    font-size: 1em;    
+    font-size: 18px;
+    padding-left: 10px;
     text-decoration: none;
 }
 
@@ -70,7 +66,7 @@ header a:hover {
     padding-left: 150px;
 }
 
-#sign_up{
+#sing_up{
     border: 1px solid white;
     text-align: center;
     padding-top: 5px;
@@ -154,7 +150,6 @@ header a:hover {
 
 #texto{
     width: 40%;
-    border: 1px solid black;
     padding-right: 200px;
 }
 
@@ -170,71 +165,26 @@ header a:hover {
 }
 
 #funcionarios{
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 18px;
 }
-
-.slider input {
-    display: none;
-}
-
-.slider {
-    display: block;
-    height: 293px;
-    width: 500px;
-    margin: auto;
-    margin-top: 20px;
-    position: relative;
-}
-
-.slider li {
-    list-style: none;
-    position: absolute;
-}
-
-.slider img {
-    margin: auto;
-    height: 100%;
-    width: 100%;
-    vertical-align: top;
-}
-
-.slider label {
-    background-color: white;
-    bottom: 0px;
-    cursor: pointer;
-    display: block;
-    height: 10px;
-    position: absolute;
-    width: 10px;
-    z-index: 10;
-    border-radius: 100%;
-    margin-top: 20px;
-}
-
-.slider li:nth-child(1) label {
-    left: 220px;
-}
-
-.slider li:nth-child(2) label {
-    left: 240px;
-}
-
-
-.slider img {
-    opacity: 0;
-    visibility: hidden;
-}
-
-.slider li input:checked ~ img {
-    opacity: 1;
-    visibility: visible;
-    z-index: 10;
+#funcionarios h2{
+    color: white;
+    text-align: center;
 }
 
 #propaganda{
     width: 100%;
     height: 1080;
     background-color: #DB562D;
+}
+
+#funcionarios h2{
+    color: white;
+    text-align: center;
 }
 
 
