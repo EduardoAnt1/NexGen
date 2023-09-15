@@ -1,6 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-
+@keyframes bg_animation
+{
+    0%
+    {
+        background-position: -100px -300px;        
+        backdrop-filter: brightness(0%);
+    }    
+    80%    
+    {
+        background-position: 0px 0px;   
+        backdrop-filter: brightness(100%);         
+    }    
+    100%
+    {
+        background-position: 0px 0px; 
+        backdrop-filter: brightness(0%);
+    }
+}
 
 body, html {
   margin:0;
@@ -10,9 +27,8 @@ body, html {
 }
 
 body {
-    background-color: white;
+    background-color: gray;
     font-family: 'Inter', sans-serif;
-
 }
 
 header {
@@ -21,13 +37,20 @@ header {
     display: inline-block;
 }
 
-#container {
-    background-image: url(/Site_institucional-main/Nexgen/assets/image/background_casa_resized.png);
+#container-bg {
+    background: no-repeat center rgba(255, 0, 0, 0.61) url(../assets/image/bg.png); 
+    background-size: 2000px 1250px;
+    background-attachment: fixed;
     width: 100%;
-    height: 780px;
-    background-repeat: no-repeat;
-    background-size:cover;
+    height: 740px;
+    animation: bg_animation 10s linear infinite;   
+}
 
+#container-content
+{
+    animation: bg_animation 10s linear infinite;      
+    height: 100%;
+    width: 100%;
 }
 
 #logo_header {
@@ -38,7 +61,7 @@ header {
 .main-nav {
     margin: 0;
     display: flex;
-    padding-left: 100px; 
+    padding-left: 100px;     
 }
 
 a {
@@ -66,7 +89,7 @@ header a:hover {
     padding-left: 150px;
 }
 
-#sing_up{
+#sign_up{
     border: 1px solid white;
     text-align: center;
     padding-top: 5px;
@@ -137,7 +160,7 @@ header a:hover {
 }
 
 #sobre{
-    background-image: url(/Site_institucional-main/Nexgen/assets/image/fundo_sobre_nos.png);
+    background-image: url(assets/image/fundo_sobre_nos.png);
     width: 100%;
     height: 450px;
     background-repeat: no-repeat;
