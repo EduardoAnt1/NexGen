@@ -7,15 +7,29 @@
         background-position: -100px -300px;        
         backdrop-filter: brightness(0%);
     }    
+    20%
+    {
+        backdrop-filter: brightness(100%);
+    }
     80%    
     {
-        background-position: 0px 0px;   
-        backdrop-filter: brightness(100%);         
+        background-position: -20px -60px;        
     }    
     100%
     {
         background-position: 0px 0px; 
         backdrop-filter: brightness(0%);
+    }
+}
+
+@keyframes loginDescend 
+{
+    from {
+        top: -100vh;
+    }
+    to
+    {
+        top: 27vh;
     }
 }
 
@@ -29,6 +43,7 @@ body, html {
 body {
     background-color: gray;
     font-family: 'Inter', sans-serif;
+    transition: .4s;
 }
 
 header {
@@ -38,17 +53,17 @@ header {
 }
 
 #container-bg {
-    background: no-repeat center rgba(255, 0, 0, 0.61) url(../assets/image/bg.png); 
-    background-size: 2000px 1250px;
+    background: no-repeat center url(../assets/image/bg.png); 
+    background-size: 120% 150%;
     background-attachment: fixed;
     width: 100%;
     height: 740px;
-    animation: bg_animation 10s linear infinite;   
+    animation: bg_animation 15s linear infinite;   
 }
 
 #container-content
 {
-    animation: bg_animation 10s linear infinite;      
+    animation: bg_animation 15s linear infinite;      
     height: 100%;
     width: 100%;
 }
@@ -98,6 +113,21 @@ header a:hover {
     padding-right: 10px;
     border-radius: 20px;
 }
+
+#login_form
+{
+    z-index: 1;
+    position: fixed;
+    left: 25vw;
+    top: 27vh;
+    background-color: gray;
+    border: .1em solid #F56941;
+    border-style: outset;
+    border-radius: 1em;
+    padding: 25vh 25vw;
+    animation: loginDescend .6s linear;
+}
+
 #redes{
     margin-top: 25px;
     margin-left: 75px;
