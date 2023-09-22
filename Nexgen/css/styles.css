@@ -1,13 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+:root
+{
+    --cor-primaria: white;
+    --cor-secundaria: #040548;
+    --cor-terciaria: #F56941;
+    --cor-quartenaria: #DB562D;
+}
+
 @keyframes loginDescend 
 {
     from {
-        top: -100vh;
+        opacity: 0;
     }
     to
     {
-        top: 27vh;
+        opacity: 1;
     }
 }
 
@@ -19,9 +27,8 @@ body, html {
 }
 
 body {
-    background-color: gray;
+    background-color: var(--cor-primaria);
     font-family: 'Inter', sans-serif;
-    transition: .4s;
 }
 
 header {
@@ -32,8 +39,8 @@ header {
 
 #container {
     background: no-repeat center url(../assets/image/bg.png); 
-    background-size: 120% 150%;    
-    background-attachment: fixed;
+    background-size: cover;    
+    
     width: 100%;
     height: 740px;
 }
@@ -50,7 +57,7 @@ header {
 }
 
 a {
-    color: white;
+    color: var(--cor-primaria);
     font-size: 18px;
     padding-left: 10px;
     text-decoration: none;
@@ -75,7 +82,7 @@ header a:hover {
 }
 
 #sign_up{
-    border: 1px solid white;
+    border: 1px solid var(--cor-primaria);
     text-align: center;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -88,13 +95,15 @@ header a:hover {
 {
     z-index: 1;
     position: fixed;
-    left: 25vw;
-    top: 27vh;
-    background-color: gray;
-    border: .1em solid #F56941;
-    border-style: outset;
-    border-radius: 1em;
-    padding: 25vh 25vw;
+    top: 50%;
+    left: 50%;    
+    transform: translate(-50%, -50%);
+    background-color: var(--cor-primaria);
+    border: .6em solid var(--cor-terciaria);
+    border-top: 2em;    
+    border-left: 10em;    
+    border-radius: 1em;    
+    padding: 20vh 8vw;
     animation: loginDescend .6s linear;
 }
 
@@ -106,7 +115,7 @@ header a:hover {
 
 
 #cta h1{
-    color: white;
+    color: var(--cor-primaria);
     margin-top: 200px;
     margin-left: 100px;
     font-size: 40px;
@@ -115,15 +124,15 @@ header a:hover {
 }
 
 #cta h5{
-    color: white;
+    color: var(--cor-primaria);
     margin-left: 100px;
     margin-bottom: 40px;
     font-weight: 600;
 }
 
 #cta a{
-    background-color: #F56941;
-    color: white;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
     border: 0;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -148,23 +157,24 @@ header a:hover {
 }
 
 #casa_in h2{
-    color: #DB562D;
+    font-family: 'Inter';
+    font-weight: 700;    
+    color: var(--cor-quartenaria);
     margin-bottom: 40px;
 }
 
-#video{
-    margin-left: px;
-    background-color: #DB562D;
+#video{    
+    background-color: var(--cor-quartenaria);
     width: 1239px;
     height: 705px;
 }
 
 #sobre{
-    background-image: url(assets/image/fundo_sobre_nos.png);
-    width: 100%;
-    height: 450px;
+    background: url(../assets/image/fundo_sobre_nos.png);    
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
+    width: 100%;
+    height: 450px;    
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -177,13 +187,13 @@ header a:hover {
 }
 
 #texto h2{
-    color: white;
+    color: var(--cor-primaria);
     text-align: center;
     padding-bottom: 20;
 }
 
 #texto p{
-    color: white;
+    color: var(--cor-primaria);
     text-align: justify;
 }
 
@@ -195,18 +205,18 @@ header a:hover {
     padding-top: 18px;
 }
 #funcionarios h2{
-    color: white;
+    color: var(--cor-primaria);
     text-align: center;
 }
 
 #propaganda{
     width: 100%;
     height: 1080;
-    background-color: #DB562D;
+    background-color: var(--cor-quartenaria);
 }
 
 #funcionarios h2{
-    color: white;
+    color: var(--cor-primaria);
     text-align: center;
 }
 
