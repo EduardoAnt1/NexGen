@@ -1,27 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-@keyframes bg_animation
-{
-    0%
-    {
-        background-position: -100px -300px;        
-        backdrop-filter: brightness(0%);
-    }    
-    20%
-    {
-        backdrop-filter: brightness(100%);
-    }
-    80%    
-    {
-        background-position: -20px -60px;        
-    }    
-    100%
-    {
-        background-position: 0px 0px; 
-        backdrop-filter: brightness(0%);
-    }
-}
-
 @keyframes loginDescend 
 {
     from {
@@ -52,20 +30,12 @@ header {
     display: inline-block;
 }
 
-#container-bg {
+#container {
     background: no-repeat center url(../assets/image/bg.png); 
-    background-size: 120% 150%;
+    background-size: 120% 150%;    
     background-attachment: fixed;
     width: 100%;
     height: 740px;
-    animation: bg_animation 15s linear infinite;   
-}
-
-#container-content
-{
-    animation: bg_animation 15s linear infinite;      
-    height: 100%;
-    width: 100%;
 }
 
 #logo_header {
