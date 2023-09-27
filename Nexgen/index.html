@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/Logo_NEXGEN.png" type="image/x-icon">
+    <link rel="icon" href="assets/image/Logo_NEXGEN.png" type="image/x-icon">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Nexgen</title>
@@ -27,7 +27,7 @@
                         <a href="index.html">CONTATO</a>
                     </div>
                     <div id="bt_login">
-                        <a onclick="loginForm(this)">Sign in</a>
+                        <a onclick="loginForm(this)" id="sign_in">Sign in</a>
                         <a href="login.html" id="sign_up">Sign up</a>
                     </div>
                     <div id="redes">
@@ -38,7 +38,16 @@
                         <a href="https://www.linkedin.com"><img src="assets/image/linkedin.png" alt="Linkedin"
                                 width="30" height="30"></a>
                     </div>
-
+                    <div id="login_form">
+                        <form>
+                            <label for="user_input" class="form_label">Usuário</label>
+                            <input type="text" class="form_input" id="user_input">
+                            <label for="password_input" class="form_label">Senha</label>
+                            <input type="password" class="form_input" id="password_input">
+                            <input type="button" class="form_button" value="Entrar">
+                            <input type="button" class="form_button" value="Cadastrar">
+                        </form>
+                    </div>
                 </ul>
             </nav>
         </header>
@@ -75,10 +84,10 @@
         <div id="funcionarios">
             <h2>FUNCIONÁRIOS</h2>
             <div>
-                <img src="../assets/image/pedro.png" />
+                <img src="assets/image/pedro.png" />
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;
-                <img src="../assets/image/eduardo.png" />
+                <img src="assets/image/eduardo.png" />
             </div>
         </div>
     </div>

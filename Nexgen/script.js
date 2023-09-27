@@ -1,15 +1,16 @@
 function loginForm()
 {
-    let login = document.createElement('div')
-    login.id = 'login_form'
-    login.innerHTML = `<a href="login.html" id="sign_up">Sign up</a>`
-    document.body.appendChild(login)    
+    let login = document.getElementById("login_form")   
+    login.style.opacity = '1'
     
-    login.onclick = (e) => {
-        login.blur()
-    }
-    login.onblur = (e) =>
-    {
-        document.body.removeChild(login)
-    }
+    setTimeout(() => {
+        document.body.onclick = (e) =>
+        {
+            if(e.target != login && !login.contains(e.target) && e.target != document.getElementById("sign_in"))
+            {
+                login.style.opacity = '0'
+                document.body.onclick = null
+            }
+        }    
+    }, 10)
 }
