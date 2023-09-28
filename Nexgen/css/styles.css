@@ -6,6 +6,7 @@
     --cor-secundaria: #040548;
     --cor-terciaria: #F56941;
     --cor-quartenaria: #DB562D;
+    --cor-quintenaria: #F3EFEF;
 }
 
 body, html {
@@ -13,6 +14,7 @@ body, html {
   padding:0;
   width:100%;
   height:100%;
+  user-select: none;
 }
 
 body {
@@ -49,6 +51,7 @@ a {
     font-size: 18px;
     padding-left: 10px;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .push {
@@ -81,35 +84,80 @@ header a:hover {
 
 #login_form
 {     
-    font-family: 'Inter';    
+    font-family: 'Inter';     
     z-index: 1;
-    position: fixed;
+    position: fixed;    
     top: 50%;
     left: 50%;    
     transform: translate(-50%, -50%);
-    background-color: var(--cor-primaria);
-    border: .6em solid var(--cor-terciaria);
+    background-color: var(--cor-primaria);    
+    border: .6em solid var(--cor-terciaria);    
     border-top: 2em;    
     border-left: 10em;    
     border-radius: 1em;        
-    padding: 10vh 4vw;
+    padding: 8vh 3vw;
+    padding-bottom: 5vh;
     opacity: 0;
-    transition: .6s;
+    transition: .6s;    
+    box-shadow: 1em .7em .2em .1em black;    
+}
+
+#login_form form 
+{
+    display: flex;
+    gap: .8em;    
+    flex-direction: column;       
+    align-items: center;
+}
+
+#login_form a
+{
+    font-size: .8em;
+    padding-left: 5%;
+    margin-top: -.5em;
+    align-self: flex-start;
+    color: #0094E7;
+}
+
+#login_form .span_close
+{       
+    position: absolute;
+    top: 5%;
+    font-family: 'Inter';
+    font-weight: 900;
+    border-radius: 50%;
+    padding: .5em;    
+    text-align: center;
+    cursor: pointer;
+    height: 1em;
+    width: 1em;
+    border: .1em solid black;
+    left:85%;    
+}   
+
+#login_form form div
+{
+    margin-top: 2em;
+    display: flex;
+    width: 100%;         
+    gap: 1em;
+    justify-content: space-between;    
 }
 
 .form_label 
 {
+    text-align: left;
     display: block;
+    width: 90%;
     font-size: 1.2em;
-    font-weight: 500;
-    margin-bottom: .5em;
+    font-weight: 500;    
 }
 
 .form_input
 {
-    display: block;
-    margin-bottom: .8em;
-    width: 100%;
+    width: 80%;
+    display: block; 
+    background-color: var(--cor-quintenaria);       
     border: .1em solid black;
     font-size: 1em;
     padding: .5em;
@@ -117,16 +165,25 @@ header a:hover {
 }
 
 .form_button
-{
-    display: inline-block;
+{    
+    width: 6.5em;
+    display: block;
     font-weight: 500;
     font-size: 1.2em;
     color: var(--cor-primaria);
-    background-color: var(--cor-terciaria);
+    background-color: var(--cor-quartenaria);
     border: none;
     border-radius: 1em;
-    padding: .2em 1em;
+    padding: .4em 0;
+    cursor: pointer;    
+    transition: .2s;
 }
+
+.form_button:hover
+{
+    background-color: var(--cor-terciaria);
+}
+
 
 #redes{
     margin-top: 25px;

@@ -1,7 +1,7 @@
 function loginForm()
 {
     let login = document.getElementById("login_form")   
-    login.style.opacity = '1'
+    login.style.opacity = '1'    
     
     setTimeout(() => {
         document.body.onclick = (e) =>
