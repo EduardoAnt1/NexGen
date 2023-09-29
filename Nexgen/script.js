@@ -6,11 +6,11 @@ function loginForm()
     setTimeout(() => {
         document.body.onclick = (e) =>
         {
-            if(e.target != login && !login.contains(e.target) && e.target != document.getElementById("sign_in"))
+            if(e.target != login && !login.contains(e.target) && e.target != document.getElementById("sign_in") && e.target != document.getElementById("sign_up"))
             {
-                login.style.opacity = '0'
+                login.style.opacity = '0'                
                 document.body.onclick = null
             }
         }    
-    }, 10)
+    }, 10)    
 }

@@ -12,23 +12,49 @@
 </head>
 
 <body>
+    <div id="login_form">                        
+        <span class="span_close" onclick="document.body.onclick(this)">X</span>
+        <input type="radio" name="select" id="hide_log" hidden selected>        
+        <form>
+            <label for="user_input" class="form_label">Usuário</label>
+            <input type="text" class="form_input" id="user_login">
+            <label for="password_input" class="form_label">Senha</label>
+            <input type="password" class="form_input" id="password_login">
+            <a href="#">Esqueceu a senha?</a>
+            <div>
+                <input type="button" class="form_button" value="Entrar">
+                <input type="button" class="form_button" value="Cadastrar" onclick="document.querySelector('#hide_log').checked = true">
+            </div>
+        </form>
+        <input type="radio" name="select" id="hide_cad" hidden>        
+        <form>
+            <label for="user_input" class="form_label">Email</label>
+            <input type="email" class="form_input" id="email_cad" required>
+            <label for="password_input" class="form_label">Senha</label>
+            <input type="password" class="form_input" id="password_cad1">
+            <label for="password_input" class="form_label">Confirmar Senha</label>
+            <input type="password" class="form_input" id="password_cad2">            
+            <div>                
+                <input type="button" class="form_button" value="Cadastrar">
+            </div>
+        </form>
+
+    </div>
     <div id="container">
         <header>
             <nav>
                 <ul class="main-nav">
                     <div id="logo">
-                        <a href="index.html"><img src="assets/image/Logo_NEXGEN.png" id="logo_header" width="75"
-                                height="75"></a>
+                        <a href="index.html"><img src="assets/image/Logo_NEXGEN.png" id="logo_header" width="75" height="75"></a>
                     </div>
                     <div id="pages_nav">
-                        <a href="index.html">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="index.html-sobre">SOBRE NÓS</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="index.html">SUA CASA INTELIGENTE</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="index.html">CONTATO</a>
+                        <a href="index.html">HOME</a>
+                        <a href="index.html-sobre">SOBRE NÓS</a>
+                        <a href="index.html">SUA CASA INTELIGENTE</a>                        
                     </div>
                     <div id="bt_login">
-                        <a onclick="loginForm(this)" id="sign_in">Sign in</a>
-                        <a href="login.html" id="sign_up">Sign up</a>
+                        <label for="hide_cad"><a onclick="loginForm(this)" id="sign_in">Sign in</a></label>
+                        <label for="hide_log"><a onclick="loginForm(this)" id="sign_up">Sign up</a></label>
                     </div>
                     <div id="redes">
                         <a href="https://www.facebook.com"><img src="assets/image/facebook.png" alt="facebook"
@@ -37,20 +63,6 @@
                                 height="30"></a>
                         <a href="https://www.linkedin.com"><img src="assets/image/linkedin.png" alt="Linkedin"
                                 width="30" height="30"></a>
-                    </div>
-                    <div id="login_form">                        
-                        <form>
-                            <span class="span_close" onclick="document.body.onclick(this)">X</span>
-                            <label for="user_input" class="form_label">Usuário</label>
-                            <input type="text" class="form_input" id="user_input">
-                            <label for="password_input" class="form_label">Senha</label>
-                            <input type="password" class="form_input" id="password_input">
-                            <a href="#">Esqueceu a senha?</a>
-                            <div>
-                                <input type="button" class="form_button" value="Entrar">
-                                <input type="button" class="form_button" value="Cadastrar">
-                            </div>
-                        </form>
                     </div>
                 </ul>
             </nav>
