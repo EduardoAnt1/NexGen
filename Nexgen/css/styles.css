@@ -464,15 +464,30 @@ header a:hover {
     padding-top: 100px;
     display: flex;
     flex-direction: row;
+    column-gap: 300px;
 }
 #txt_download{
-    justify-content: center;
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
 }
 #celular{
-    border: 10px solid black;
+    width: 50%;
+    height: 50%;
     padding: 0px;
 }
+
+#download h1{
+    color: var(--cor-quartenaria);
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+#download h2{
+    padding-top: 100px;
+    font-weight: 600;
+}
+
+
 
 
