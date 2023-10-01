@@ -338,7 +338,8 @@ header a:hover {
     width: 100%;
     height: 1080;
     background-color: var(--cor-primaria);
-    padding: 200px;
+    padding-top: 200px;
+    padding-left: 100px;
     justify-content: center;
     align-items: center;
 }
@@ -346,8 +347,18 @@ header a:hover {
     display: flex;
     flex-direction: row;
 }
+
 #propaganda div{
     padding-right: 100px;
+}
+
+#linha1{
+    padding-left: 40px;
+    margin-bottom: 50px;
+}
+
+#linha2{
+    margin-left: 0px;
 }
 
 
