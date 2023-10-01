@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/image/Logo_NEXGEN.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Nexgen</title>
+</head>
+
+<body>
+    <div id="login_form">                        
+        <span class="span_close" onclick="document.body.onclick(this)">X</span>
+        <input type="radio" name="select" id="hide_log" hidden selected>        
+        <form>
+            <label for="user_input" class="form_label">Usuário</label>
+            <input type="text" class="form_input" id="user_login">
+            <label for="password_input" class="form_label">Senha</label>
+            <input type="password" class="form_input" id="password_login">
+            <a href="#">Esqueceu a senha?</a>
+            <div>
+                <input type="button" class="form_button" value="Entrar">
+                <input type="button" class="form_button" value="Cadastrar" onclick="document.querySelector('#hide_log').checked = true">
+            </div>
+        </form>
+        <input type="radio" name="select" id="hide_cad" hidden>        
+        <form>
+            <label for="user_input" class="form_label">Email</label>
+            <input type="email" class="form_input" id="email_cad" required>
+            <label for="password_input" class="form_label">Senha</label>
+            <input type="password" class="form_input" id="password_cad1">
+            <label for="password_input" class="form_label">Confirmar Senha</label>
+            <input type="password" class="form_input" id="password_cad2">            
+            <div>                
+                <input type="button" class="form_button" value="Cadastrar">
+            </div>
+        </form>
+
+    </div>
+    <div id="container2">
+        <header>
+            <nav>
+                <ul class="main-nav">
+                    <div id="logo">
+                        <a href="index.html"><img src="assets/image/Logo_NEXGEN.png" id="logo_header" width="75" height="75"></a>
+                    </div>
+                    <div id="pages_nav">
+                        <a href="index.html">HOME</a>
+                        <a href="index.html-sobre">SOBRE NÓS</a>
+                        <a href="produto.html">SUA CASA INTELIGENTE</a>                        
+                    </div>
+                    <div id="bt_login">
+                        <label for="hide_cad"><a onclick="loginForm(this)" id="sign_in">Sign in</a></label>
+                        <label for="hide_log"><a onclick="loginForm(this)" id="sign_up">Sign up</a></label>
+                    </div>
+                    <div id="redes">
+                        <a href="https://www.facebook.com"><img src="assets/image/facebook.png" alt="facebook"
+                                width="30" height="30"></a>
+                        <a href="https://www.instagram.com"><img src="assets/image/Insta.png" alt="instagram" width="30"
+                                height="30"></a>
+                        <a href="https://www.linkedin.com"><img src="assets/image/linkedin.png" alt="Linkedin"
+                                width="30" height="30"></a>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+        <div id="cta">
+            <h1>Descubra a Próxima Geração<br>
+                da Casa Inteligente com a NexGen!
+            </h1>
+            <br><br><br><br><br>
+            <h5>Transforme sua casa em um espaço inteligente e conectado com <br>
+                o aplicativo NexGen. Controle as luzes, temperatura, segurança e<br>
+                muito mais, tudo na ponta dos seus dedos.</h5>
+        </div>
+    </div>
+
+    <div id="cta_download">
+        <div id="recursos">
+        <h2>Recursos Destacados:</h2>
+        <br>
+        <ol>
+        <li><h3>Controle Total:</h3>Gerencie todos os dispositivos em sua casa a partir de um único aplicativo.</li>
+        <li<h3>Automatização Inteligente:</h3> Crie cenários personalizados para tornar sua casa mais eficiente.</li>
+        <li><h3>Segurança de Ponta:</h3> Monitore sua casa em tempo real e receba alertas instantâneos.</li>
+        <li><h3>Compatibilidade Universal:</h3> Funciona com uma ampla gama de dispositivos inteligentes.</li>
+        </ol>
+        </div>
+        <div id = download>
+            <div id="txt_download">
+                <h1>Baixe Agora para uma Casa mais Inteligente!</h1>
+                <a href="https://play.google.com/store/games?device=windows"><img src="assets/image/playstore.png" alt="playstore"></a>
+                <a href="https://www.apple.com/br/app-store/"><img src="assets/image/apple.png" alt="apple store"></a>
+            </div>
+            <div id="celular">
+                <img src="assets/image/celular.png" alt="celular">
+            </div>
+        </div>
+    </div>
+
+
+    <div id="footer">
+        <div id=" logo_footer">
+            <img src="assets/image/logo_col.png" alt= "LOGO NEXGEN COLORIDA">
+        </div>
+        <div id = "mid">
+            <div id="logo_redes">
+                <img src="assets/image/facebook.png" alt="facebook">
+                <img src="assets/image/Insta.png" alt="instagram">
+                <img src="assets/image/linkedin.png" alt="linkedin">
+            </div>
+            <div id = "wpp">
+                <img src="assets/image/wpp.png" alt="Whatsapp">
+                <p>(32)4002-8922</p>
+            </div>
+            <div id = "email">
+                <img src="assets/image/email.png" alt="Email">
+                <p>contato@nexgen.com</p>
+            </div>
+            <div id="copyright">
+                <p>Todos os direitos Reservados | Desenvolvido por NexGen</p>
+            </div>
+        </div>
+        <div id="right">
+            <h2>Informações</h2>
+            <div id="local">
+                <img src="assets/image/pointer-map.png" alt="ponteiro de mapa">
+                <p>R. José Péres, 558 - Centro <br>
+                    Leopoldina - MG, 36700-000
+                </p>
+            </div>
+            <div id="horario">
+                <img src="assets/image/clock.png" alt="relogio">
+                <p>Aberto de  Segunda a Sexta de 9h-18h</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
