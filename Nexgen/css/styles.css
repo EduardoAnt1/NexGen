@@ -276,9 +276,10 @@ header a:hover {
 
 #casa_in h2{
     font-family: 'Inter';
-    font-weight: 700;    
+    font-weight: 900;    
     color: var(--cor-quartenaria);
     margin-bottom: 40px;
+    font-size: 40px;
 }
 
 #video{    
@@ -381,17 +382,13 @@ header a:hover {
     font-weight: 800;
 }
 
-#footer div{
-    border: 2px solid black;
-}
-
 
 #logo_redes{
     justify-content: center;
     display: flex;
     flex-wrap: wrap;    
     column-gap: 10px;
-    padding-top: 20px;
+    padding-top: 40px;
 }
 #wpp{
     justify-content: center;
@@ -413,16 +410,23 @@ header a:hover {
 }
 
 #local{
-    justify-content: center;
-    padding-top: 20px;
+    padding: 20px 0px;
+    margin-left: 0px;
     display: flex;
     flex-direction: row;
 }
 #horario{
-    justify-content: center;
-    padding-top: 20px;
+    padding-top: 30px;
     display: flex;
     flex-direction: row;
+}
+#local img{
+    width: 30px;
+    height: 30px;
+    margin: 0px;
+}
+#right{
+    padding-top: 40px;
 }
 
 
