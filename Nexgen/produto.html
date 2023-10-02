@@ -13,32 +13,30 @@
 
 <body>
     <div id="login_form">                        
-        <span class="span_close" onclick="document.body.onclick(this)">X</span>
-        <input type="radio" name="select" id="hide_log" hidden selected>        
-        <form>
-            <label for="user_input" class="form_label">Usuário</label>
+        <span class="span_close" onclick="document.body.onclick(this)">X</span>    
+        <form id="form_log">
+            <label for="user_login" class="form_label">Usuário</label>
             <input type="text" class="form_input" id="user_login">
-            <label for="password_input" class="form_label">Senha</label>
+            <label for="password_login" class="form_label">Senha</label>
             <input type="password" class="form_input" id="password_login">
             <a href="#">Esqueceu a senha?</a>
             <div>
                 <input type="button" class="form_button" value="Entrar">
-                <input type="button" class="form_button" value="Cadastrar" onclick="document.querySelector('#hide_log').checked = true">
+                <input type="button" class="form_button" value="Cadastro" onclick="switchForm(0)">
             </div>
-        </form>
-        <input type="radio" name="select" id="hide_cad" hidden>        
-        <form>
-            <label for="user_input" class="form_label">Email</label>
+        </form>     
+        <form id="form_cad">
+            <label for="email_cad" class="form_label">Email</label>
             <input type="email" class="form_input" id="email_cad" required>
-            <label for="password_input" class="form_label">Senha</label>
+            <label for="password_cad1" class="form_label">Senha</label>
             <input type="password" class="form_input" id="password_cad1">
-            <label for="password_input" class="form_label">Confirmar Senha</label>
+            <label for="password_cad2" class="form_label">Confirmar Senha</label>
             <input type="password" class="form_input" id="password_cad2">            
             <div>                
+                <input type="button" class="form_button" value="Login" onclick="switchForm(1)">
                 <input type="button" class="form_button" value="Cadastrar">
             </div>
         </form>
-
     </div>
     <div id="container2">
         <header>
@@ -49,12 +47,12 @@
                     </div>
                     <div id="pages_nav">
                         <a href="index.html">HOME</a>
-                        <a href="index.html-sobre">SOBRE NÓS</a>
-                        <a href="produto.html">SUA CASA INTELIGENTE</a>                        
+                        <a href="index.html#sobre">SOBRE NÓS</a>
+                        <a href="#">SUA CASA INTELIGENTE</a>                        
                     </div>
                     <div id="bt_login">
-                        <label for="hide_cad"><a onclick="loginForm(this)" id="sign_in">Sign in</a></label>
-                        <label for="hide_log"><a onclick="loginForm(this)" id="sign_up">Sign up</a></label>
+                        <a onclick="loginForm(this); switchForm(1)" id="sign_in">Sign in</a>
+                        <a onclick="loginForm(this); switchForm(0)" id="sign_up">Sign up</a>
                     </div>
                     <div id="redes">
                         <a href="https://www.facebook.com"><img src="assets/image/facebook.png" alt="facebook"

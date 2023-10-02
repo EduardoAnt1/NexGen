@@ -9,10 +9,6 @@
     --cor-quintenaria: #F3EFEF;
 }
 
-body, html {
-  user-select: none;
-}
-
 body {
     background-color: var(--cor-primaria);
     font-family: 'Inter', sans-serif;
@@ -42,6 +38,7 @@ header {
 }
 
 .main-nav {
+    text-wrap: nowrap;
     width: 100%;
     margin: 0;
     display: flex;
@@ -94,6 +91,12 @@ header a:hover {
     text-decoration: underline;
 }
 
+#bt_login
+{
+    display: flex;
+    align-items:center;
+}
+
 #sign_up{
     border: 1px solid var(--cor-primaria);
     text-align: center;
@@ -106,6 +109,7 @@ header a:hover {
 
 #login_form
 {     
+    pointer-events: none;
     font-family: 'Inter';     
     z-index: 1;
     position: fixed;    
@@ -117,15 +121,12 @@ header a:hover {
     border-top: 2em;    
     border-left: 10em;    
     border-radius: 1em;        
-    height: 25vh;
-    width: 15vw;
-    padding: 8vh 3vw;    
-    padding-bottom: 5vh;
+    padding: 2em;    
     opacity: 0;
     transition: .6s;    
 }
 
-#login_form form:nth-of-type(1)
+#login_form form
 {
     display: flex;
     gap: .8em;    
@@ -138,13 +139,7 @@ header a:hover {
 
 #login_form form:nth-of-type(2)
 {
-    display: flex;
     gap: .4em;    
-    width: inherit;
-    height: inherit;
-    flex-direction: column;       
-    align-items: center;
-    justify-content: center;
 }
 
 #login_form form div
@@ -156,12 +151,6 @@ header a:hover {
     justify-content: space-between;    
 }
 
-#login_form form:nth-of-type(2) div
-{
-    gap: 0;
-    justify-content: center;
-}
-
 #login_form a
 {
     font-size: .8em;
@@ -169,12 +158,6 @@ header a:hover {
     margin-top: -.5em;
     align-self: flex-start;
     color: #0094E7;
-}
-
-
-#login_form input[type="radio"]:checked + form
-{
-    display: none;
 }
 
 .form_label 
