@@ -9,6 +9,11 @@
     --cor-quintenaria: #F3EFEF;
 }
 
+*
+{
+    scroll-behavior: smooth; 
+}
+
 body {
     background-color: var(--cor-primaria);
     font-family: 'Inter', sans-serif;
@@ -38,7 +43,7 @@ header {
 }
 
 .main-nav {
-    text-wrap: nowrap;
+    word-wrap: nowrap;
     width: 100%;
     margin: 0;
     display: flex;
@@ -295,7 +300,6 @@ header a:hover {
     padding-bottom: 40px;
     padding-top: 0px;
     font-weight: 800;
-
 }
 
 #texto p{
@@ -317,35 +321,38 @@ header a:hover {
     font-size: large;
 }
 #imagens_func{
-        padding-top: 20px;
+    padding-top: 20px;
 }
 
 #propaganda{
-    width: 100%;
-    height: 1080;
+    width: 100%;    
     background-color: var(--cor-primaria);
-    padding-top: 200px;
-    padding-left: 100px;
-    padding-bottom: 200px;
-    justify-content: center;
-    align-items: center;
+    padding-top: 200px;    
+    padding-bottom: 200px;    
+    display: flex;    
+    flex-direction: column;    
+    gap: 50px;
 }
+
 #propaganda ul{
     display: flex;
     flex-direction: row;
 }
 
-#propaganda div{
-    padding-right: 100px;
+#propaganda div
+{
+    width: 30%;
+    text-align: center;
 }
 
-#linha1{
-    padding-left: 40px;
-    margin-bottom: 50px;
+#linha1{        
+    justify-content: center;
+    width: 100%;
 }
 
 #linha2{
-    margin-left: 0px;
+    width: 100%;    
+    justify-content: center;    
 }
 
 #footer{
@@ -353,6 +360,7 @@ header a:hover {
     display: flex;
     flex-direction: wrap;
     column-gap: 150px;
+    justify-content: center;
 
 }
 #footer p{
