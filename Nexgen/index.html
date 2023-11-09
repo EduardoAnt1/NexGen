@@ -41,29 +41,43 @@
     </div>
     <div id="container">
         <header>
-            <nav>
-                <ul class="main-nav">
-                    <div id="logo">
-                        <a href="index.html"><img src="assets/image/Logo_NEXGEN.png" id="logo_header" width="75" height="75"></a>
+            <nav class="navbar navbar-dark navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand col-lg-2 text-center" href="#" style="text-align: center;">
+                        <img src="assets/image/Logo_NEXGEN.png" id="logo_header" width="75" height="75">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse nav-underline" id="navbarScroll">
+                        <ul class="navbar-nav my-2" id="index-ul">
+                            <li class="nav-item ms-4">
+                                <a class="nav-link text-light active" aria-current="page" href="#" onclick="changeIndexUlHighlight(0)">HOME</a>
+                            </li>
+                            <li class="nav-item ms-4">
+                                <a class="nav-link text-light" aria-current="page" href="index.html#sobre" onclick="changeIndexUlHighlight(1)">SOBRE NÓS</a>
+                            </li>
+                            <li class="nav-item ms-4">
+                                <a class="nav-link text-light" aria-current="page" href="produto.html">SUA CASA INTELIGENTE</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav mx-auto my-2">
+                            <li class="nav-item text-center">
+                                <button type="button" class="btn btn-light" id="sign_in" onclick="loginForm(this); switchForm(1)">Sign in</button>
+                                <button type="button" class="btn btn-primary" id="sign_up" onclick="loginForm(this); switchForm(0)">Sign up</button>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav mx-auto my-2">
+                            <li class="nav-item text-center">
+                                <a href="https://www.facebook.com"><img src="assets/image/facebook.png" alt="facebook" width="30" height="30"></a>
+                                <a href="https://www.instagram.com"><img src="assets/image/Insta.png" alt="instagram" width="30" height="30"></a>
+                                <a href="https://www.linkedin.com"><img src="assets/image/linkedin.png" alt="Linkedin" width="30" height="30"></a>
+                            </li>                                
+                        </ul>
                     </div>
-                    <div id="pages_nav">
-                        <a href="#">HOME</a>
-                        <a href="#sobre">SOBRE NÓS</a>
-                        <a href="produto.html">SUA CASA INTELIGENTE</a>                        
-                    </div>
-                    <div id="bt_login">
-                        <a onclick="loginForm(this); switchForm(1)" id="sign_in">Sign in</a>
-                        <a onclick="loginForm(this); switchForm(0)" id="sign_up">Sign up</a>
-                    </div>
-                    <div id="redes">
-                        <a href="https://www.facebook.com"><img src="assets/image/facebook.png" alt="facebook"
-                                width="30" height="30"></a>
-                        <a href="https://www.instagram.com"><img src="assets/image/Insta.png" alt="instagram" width="30"
-                                height="30"></a>
-                        <a href="https://www.linkedin.com"><img src="assets/image/linkedin.png" alt="Linkedin"
-                                width="30" height="30"></a>
-                    </div>
-                </ul>
+                </div>
             </nav>
         </header>
         <div id="cta">

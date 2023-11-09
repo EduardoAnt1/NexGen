@@ -15,7 +15,7 @@
 
 <body>
     <div id="login_form">
-        <span class="span_close" onclick="document.body.onclick(this); alert()">X</span>
+        <span class="span_close" onclick="document.body.onclick(this);">X</span>
         <form id="form_log">
             <label for="user_login" class="form_label">Usuário</label>
             <input type="text" class="form_input" id="user_login">
@@ -55,10 +55,10 @@
                     <div class="collapse navbar-collapse nav-underline" id="navbarScroll">
                         <ul class="navbar-nav my-2">
                             <li class="nav-item ms-4">
-                                <a class="nav-link text-light" aria-current="page" href="#">HOME</a>
+                                <a class="nav-link text-light" aria-current="page" href="index.html">HOME</a>
                             </li>
                             <li class="nav-item ms-4">
-                                <a class="nav-link text-light" aria-current="page" href="#">SOBRE NÓS</a>
+                                <a class="nav-link text-light" aria-current="page" href="index.html#sobre">SOBRE NÓS</a>
                             </li>
                             <li class="nav-item ms-4">
                                 <a class="nav-link text-light active" aria-current="page" href="#">SUA CASA INTELIGENTE</a>
@@ -66,8 +66,8 @@
                         </ul>
                         <ul class="navbar-nav mx-auto my-2">
                             <li class="nav-item text-center">
-                                <button type="button" class="btn btn-light" onclick="loginForm(this); switchForm(1)" style="border-radius: 2rem;">Sign in</button>
-                                <button type="button" class="btn btn-primary" onclick="loginForm(this); switchForm(0)" style="border: none; border-radius: 2rem; background-color: var(--cor-terciaria);">Sign up</button>
+                                <button type="button" class="btn btn-light" id="sign_in" onclick="loginForm(this); switchForm(1)">Sign in</button>
+                                <button type="button" class="btn btn-primary" id="sign_up" onclick="loginForm(this); switchForm(0)">Sign up</button>
                             </li>
                         </ul>
                         <ul class="navbar-nav mx-auto my-2">
