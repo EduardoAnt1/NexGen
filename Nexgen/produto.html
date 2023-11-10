@@ -13,33 +13,51 @@
     <title>Nexgen</title>
 </head>
 
-<body>
-    <div id="login_form">
-        <span class="span_close" onclick="document.body.onclick(this);">X</span>
-        <form id="form_log">
-            <label for="user_login" class="form_label">Usuário</label>
-            <input type="text" class="form_input" id="user_login">
-            <label for="password_login" class="form_label">Senha</label>
-            <input type="password" class="form_input" id="password_login">
-            <a href="#">Esqueceu a senha?</a>
-            <div>
-                <input type="button" class="form_button" value="Entrar">
-                <input type="button" class="form_button" value="Cadastro" onclick="switchForm(0)">
+<body>  
+  <!-- Modal -->
+  <div class="modal fade" id="login_modal" tabindex="-1" aria-labelledby="login_modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" style="width: 350px;">
+      <div class="modal-content" id="login_form">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="login_modal_label">Login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                    <div class="col">
+                        <label for="user_login" class="form_label">Usuário</label>
+                    </div>
+              </div>
+              <div class="row">
+                    <div class="col">
+                        <input type="text" class="form_input" id="user_login">
+                    </div>
+              </div>
+              <div class="row">
+                    <div class="col">
+                        <label for="password_cad1" class="form_label">Senha</label>
+                    </div>
+              </div>
+              <div class="row">
+                    <div class="col">
+                        <input type="password" class="form_input" id="password_cad1">
+                    </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                    <a href="#">Esqueceu a senha?</a>
+                </div>
+              </div>              
             </div>
-        </form>
-        <form id="form_cad">
-            <label for="email_cad" class="form_label">Email</label>
-            <input type="email" class="form_input" id="email_cad" required>
-            <label for="password_cad1" class="form_label">Senha</label>
-            <input type="password" class="form_input" id="password_cad1">
-            <label for="password_cad2" class="form_label">Confirmar Senha</label>
-            <input type="password" class="form_input" id="password_cad2">
-            <div>
-                <input type="button" class="form_button" value="Login" onclick="switchForm(1)">
-                <input type="button" class="form_button" value="Cadastrar">
-            </div>
-        </form>
+          </div>
+        <div class="modal-footer  justify-content-around">
+          <input type="button" class="form_button" value="Login">
+          <input type="button" class="form_button" value="Cadastrar">                    
+        </div>
+      </div>
     </div>
+  </div>
     <div id="container2">
         <header>
             <nav class="navbar navbar-dark navbar-expand-lg">
@@ -66,8 +84,8 @@
                         </ul>
                         <ul class="navbar-nav mx-auto my-2">
                             <li class="nav-item text-center">
-                                <button type="button" class="btn btn-light" id="sign_in" onclick="loginForm(this); switchForm(1)">Sign in</button>
-                                <button type="button" class="btn btn-primary" id="sign_up" onclick="loginForm(this); switchForm(0)">Sign up</button>
+                                <button type="button" class="btn btn-light" id="sign_in" data-bs-toggle="modal" data-bs-target="#login_modal">Sign in</button>
+                                <button type="button" class="btn btn-primary" id="sign_up" data-bs-toggle="modal" data-bs-target="#login_modal">Sign up</button>
                             </li>
                         </ul>
                         <ul class="navbar-nav mx-auto my-2">

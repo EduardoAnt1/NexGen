@@ -121,21 +121,14 @@ header a:hover {
 }
 
 #login_form
-{     
-    pointer-events: none;
+{         
     font-family: 'Inter';     
-    z-index: 1;
-    position: fixed;    
-    top: 50%;
-    left: 50%;    
-    transform: translate(-50%, -50%);
     background-color: var(--cor-primaria);    
-    border: .6em solid var(--cor-terciaria);    
-    border-top: 2em;    
-    border-left: 10em;    
-    border-radius: 1em;        
-    padding: 2em;    
-    opacity: 0;
+    border: .6rem solid var(--cor-terciaria);    
+    border-top: 2rem;    
+    border-left: 10rem;    
+    border-radius: 1rem;        
+    padding: 2rem;    
     transition: .6s;    
 }
 
@@ -177,33 +170,33 @@ header a:hover {
 {
     text-align: left;
     display: block;
-    width: 90%;
-    font-size: 1.2em;
+    
+    font-size: 1.2rem;
     font-weight: 500;    
 }
 
 .form_input
 {
-    width: 80%;
+    width: 100%;
     display: block; 
     background-color: var(--cor-quintenaria);       
-    border: .1em solid black;
-    font-size: 1em;
-    padding: .5em;
-    border-radius: 1em;
+    border: .1rem solid black;
+    font-size: 1rem;
+    padding: .5rem;
+    border-radius: 1rem;
 }
 
 .form_button
 {    
-    width: 6.5em;
+    width: 6.5rem;
     display: block;
     font-weight: 500;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     color: var(--cor-primaria);
     background-color: var(--cor-quartenaria);
     border: none;
-    border-radius: 1em;
-    padding: .4em 0;
+    border-radius: 1rem;
+    padding: .4rem;
     cursor: pointer;    
     transition: .2s;
 }
