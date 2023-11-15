@@ -1,0 +1,89 @@
+<div class="modal fade" id="login_modal" tabindex="-1" aria-labelledby="login_modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" style="width: 350px;">
+        <div class="modal-content" id="login_form">
+            <div id="form_log">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="login_modal_label">Login</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col">
+                                <label for="user_login" class="form_label">Usuário</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form_input" id="user_login">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="password_login" class="form_label">Senha</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <input type="password" class="form_input" id="password_login">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <a href="#">Esqueceu a senha?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer  justify-content-around">
+                    <input type="button" class="form_button" value="Login">
+                    <input type="button" class="form_button" value="Cadastro" onclick="switchForm(0)">
+                </div>
+            </div>
+            <div id="form_cad">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="cad_modal_label">Cadastro</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col">
+                                <label for="email_cad" class="form_label">Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form_input" id="email_cad">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="password_cad1" class="form_label">Senha</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <input type="password" class="form_input" id="password_cad1">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="password_cad2" class="form_label">Confirmar senha</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <input type="password" class="form_input" id="password_cad2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-around">
+                    <input type="button" class="form_button" value="Login" onclick="switchForm(1)">
+                    <input type="button" class="form_button" value="Cadastrar">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,24 +1,48 @@
-function loginForm()
-{
-    let login = document.getElementById("login_form")   
+function includeHTML() {
+    let z, i, elmnt, file, xhttp;
+    /* Loop through a collection of all HTML elements: */
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("include-html");
+        if (file) {
+            /* Make an HTTP request using the attribute value as the file name: */
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4) {
+                    if (this.status == 200) { elmnt.innerHTML = this.responseText; }
+                    if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
+                    /* Remove the attribute, and call this function once more: */
+                    elmnt.removeAttribute("include-html");
+                    includeHTML();
+                }
+            }
+            xhttp.open("GET", file, true);
+            xhttp.send();
+            /* Exit the function: */
+            return;
+        }
+    }
+}
+
+function loginForm() {
+    let login = document.getElementById("login_form")
     login.style.pointerEvents = 'all'
-    login.style.opacity = '1'    
-    
+    login.style.opacity = '1'
+
     setTimeout(() => {
-        document.body.onclick = (e) =>
-        {
-            if(e.target != login && !login.contains(e.target) && e.target != document.getElementById("sign_in") && e.target != document.getElementById("sign_up"))
-            {
-                login.style.opacity = '0'        
+        document.body.onclick = (e) => {
+            if (e.target != login && !login.contains(e.target) && e.target != document.getElementById("sign_in") && e.target != document.getElementById("sign_up")) {
+                login.style.opacity = '0'
                 login.style.pointerEvents = 'none'
                 document.body.onclick = null
             }
-        }    
-    }, 10)    
+        }
+    }, 10)
 }
 
-function switchForm(code)
-{
+function switchForm(code) {
     let log = document.querySelector('#form_log')
     let cad = document.querySelector('#form_cad')
 
@@ -26,24 +50,4 @@ function switchForm(code)
     cad.style.display = code ? 'none' : ''
 }
 
-function changeIndexUlHighlight(code)
-{
-    let ul = document.getElementById('index-ul') 
-    let home = ul.children[0];
-    let sobre = ul.children[1];    
-    if (code)
-    {
-        home.children[0].classList.remove('active')
-        sobre.children[0].classList.add('active')
-    }
-    else
-    {
-        sobre.children[0].classList.remove('active')
-        home.children[0].classList.add('active')
-    }
-}
-
-if (location.hash != '')
-{    
-    changeIndexUlHighlight(1)
-}
+includeHTML()
