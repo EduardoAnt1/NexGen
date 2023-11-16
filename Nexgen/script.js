@@ -50,4 +50,23 @@ function switchForm(code) {
     cad.style.display = code ? 'none' : ''
 }
 
+function updateNavAnchors()
+{
+    let pageName = location.pathname.split('/')[2]
+    let navAnchors = document.getElementById('nav_anchors').getElementsByTagName('a')
+    
+    if (pageName == 'index.html' || !pageName)
+    {
+        navAnchors[0].href = '#'
+        navAnchors[1].href = '#sobre'
+        navAnchors[2].href = 'produto.html'
+    }
+    else if (pageName == 'produto.html')
+    {
+        navAnchors[0].href = 'index.html'
+        navAnchors[1].href = 'index.html#sobre'
+        navAnchors[2].href = '#'
+    }
+}
+
 includeHTML()
