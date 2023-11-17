@@ -1,0 +1,132 @@
+@media (max-width: 440px)
+{
+    iframe 
+    {
+        height: 200px !important;
+    }
+
+    #cta h1{
+        margin-top: 100px !important;    
+    }
+
+}
+@media (max-width: 960px)
+{
+    iframe 
+    {
+        height: 400px ;
+    }
+
+    
+
+    #cta h1{
+        color: var(--cor-primaria);
+        margin-top: 200px;    
+        margin-left: 15px;
+        font-size: 35px;
+        line-height: 50px;
+        font-weight: 800;
+    }
+
+    #cta h5{
+        color: var(--cor-primaria);
+        margin-left: 15px;        
+        font-size: 12px;
+        font-weight: 600;
+        margin-bottom: 3rem;
+    }
+
+    #cta a{
+        background-color: var(--cor-terciaria);
+        color: var(--cor-primaria);
+        border: 0;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 20px;
+        margin-left: 15px;
+        font-weight: 700;
+        text-wrap: nowrap;
+        font-size: 10px;
+    }
+
+    #casa_in h2{
+        font-family: 'Inter';
+        font-weight: 900;    
+        color: var(--cor-quartenaria);
+        margin-bottom: 3rem;
+        font-size: 20px;
+    }
+    
+    #casa_in{
+        margin-top: 3rem;
+        height: auto;
+        padding-top: 0;
+    }
+
+    #texto{
+        padding-top: 5rem;
+    }
+    
+    #texto p
+    {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    #logo_footer img {
+        width: 100%;
+    }
+
+    #cta_download{
+        padding-top: 3rem;
+        background-color: var(--cor-primaria);
+        width:100%;
+        justify-content: left;
+    }
+    
+    #recursos{
+        border: 0;
+        padding: 0.5rem;
+        width: 100%;
+    }
+    #recursos h2{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    #recursos h3{
+        font-size: 16px;
+        font-weight: 700;
+    }
+    #download{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        column-gap: 3rem;
+        margin: 0;
+        padding: 0;
+    }
+    #txt_download{
+        display: flex;
+        font-size: 20px;
+        flex-direction: column;
+    }
+    #celular{
+        width: 50%;
+        height: 50%;
+        padding: 0px;
+    }
+    
+    #download h1{
+        color: var(--cor-quartenaria);
+        font-weight: 700;
+        padding-bottom: 10px;
+    }
+    
+    #download h2{
+        padding-top: 100px;
+        font-weight: 600;
+    }
+
+}
