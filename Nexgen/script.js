@@ -52,16 +52,16 @@ function switchForm(code) {
 
 function updateNavAnchors()
 {
-    let pageName = location.pathname.split('/')[2]
+    let pageName = location.pathname    
     let navAnchors = document.getElementById('nav_anchors').getElementsByTagName('a')
     
-    if (pageName == 'index.html' || !pageName)
+    if (pageName.includes('index.html') || !pageName.includes('produto.html'))
     {
         navAnchors[0].href = '#'
         navAnchors[1].href = '#sobre'
         navAnchors[2].href = 'produto.html'
     }
-    else if (pageName == 'produto.html')
+    else if (pageName.includes('produto.html'))
     {
         navAnchors[0].href = 'index.html'
         navAnchors[1].href = 'index.html#sobre'
