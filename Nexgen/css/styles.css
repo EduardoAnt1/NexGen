@@ -296,6 +296,7 @@ iframe{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    transition: 1s;
 }
 
 #texto{
@@ -339,6 +340,11 @@ iframe{
     padding-top: 200px;    
     padding-bottom: 200px;    
     text-align: center;
+}
+
+#propaganda div
+{
+    transition: 1.5s;
 }
 
 #propaganda img

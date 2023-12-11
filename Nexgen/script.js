@@ -69,4 +69,45 @@ function updateNavAnchors()
     }
 }
 
+function appearOnScroll(e)
+{
+    let sobre = document.getElementById('sobre')
+    let propagandaDivs = document.getElementById('propaganda').querySelectorAll('div')
+
+    if (window.scrollY > 1000)
+    {           
+        sobre.style.transform = ''
+        sobre.style.opacity = 1
+    }
+    else 
+    {        
+        sobre.style.transform = 'translate(0px, -30px)'
+        sobre.style.opacity = 0
+    }
+
+    if (window.scrollY > 1300)
+    {
+        for (let i = 0; i < 3; i++)            
+            propagandaDivs[i].style.transform = '', propagandaDivs[i].style.opacity = 1
+    }
+    else 
+    {
+        for (let i = 0; i < 3; i++)            
+            propagandaDivs[i].style.transform = 'translate(0px, -300px)', propagandaDivs[i].style.opacity = 0
+    }
+
+    if (window.scrollY > 1650)
+    {
+        for (let i = 3; i < propagandaDivs.length; i++)            
+            propagandaDivs[i].style.transform = '', propagandaDivs[i].style.opacity = 1
+    }
+    else 
+    {
+        for (let i = 3; i < propagandaDivs.length; i++) 
+            propagandaDivs[i].style.transform = 'translate(0px, -600px)', propagandaDivs[i].style.opacity = 0
+    }
+
+    console.log(window.scrollY)
+}
+
 includeHTML()
