@@ -171,8 +171,7 @@ header a:hover {
 .form_label 
 {
     text-align: left;
-    display: block;
-    
+    display: block;    
     font-size: 1.2rem;
     font-weight: 500;    
 }
@@ -265,6 +264,8 @@ header a:hover {
     justify-content: center;
     align-items: center;
     padding-top: 50px;
+    transition: .5s;
+    opacity: 0;
 }
 
 #casa_in h2{

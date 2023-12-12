@@ -74,8 +74,14 @@ function appearOnScroll(e)
     if (window.innerWidth < 798)
         return 0;
 
+    let casaIn = document.getElementById('casa_in')
     let sobre = document.getElementById('sobre')
-    let propagandaDivs = document.getElementById('propaganda').querySelectorAll('div')
+    let propagandaDivs = document.getElementById('propaganda').querySelectorAll('div')            
+
+    if (window.scrollY > 100)
+        casaIn.style.opacity = '1'
+    else 
+        casaIn.style.opacity = `0`
 
     if (window.scrollY > 1000)
     {           
