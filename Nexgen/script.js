@@ -85,7 +85,7 @@ function appearOnScroll(e)
         sobre.style.opacity = 0
     }
 
-    if (window.scrollY > 1300)
+    if (window.scrollY > 1500)
     {
         for (let i = 0; i < 3; i++)            
             propagandaDivs[i].style.transform = '', propagandaDivs[i].style.opacity = 1
@@ -93,10 +93,10 @@ function appearOnScroll(e)
     else 
     {
         for (let i = 0; i < 3; i++)            
-            propagandaDivs[i].style.transform = 'translate(0px, -300px)', propagandaDivs[i].style.opacity = 0
+            propagandaDivs[i].style.transform = 'translate(-1000px, 0px)', propagandaDivs[i].style.opacity = 0
     }
 
-    if (window.scrollY > 1650)
+    if (window.scrollY > 1900)
     {
         for (let i = 3; i < propagandaDivs.length; i++)            
             propagandaDivs[i].style.transform = '', propagandaDivs[i].style.opacity = 1
@@ -104,7 +104,7 @@ function appearOnScroll(e)
     else 
     {
         for (let i = 3; i < propagandaDivs.length; i++) 
-            propagandaDivs[i].style.transform = 'translate(0px, -600px)', propagandaDivs[i].style.opacity = 0
+            propagandaDivs[i].style.transform = 'translate(1000px, 0px)', propagandaDivs[i].style.opacity = 0
     }
 
     console.log(window.scrollY)

@@ -23,6 +23,7 @@ body {
     background-color: var(--cor-primaria);
     font-family: 'Inter', sans-serif;
     width: 100%;
+    overflow-x: hidden;
 }
 
 header {
