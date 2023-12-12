@@ -71,6 +71,9 @@ function updateNavAnchors()
 
 function appearOnScroll(e)
 {
+    if (window.innerWidth < 798)
+        return 0;
+
     let sobre = document.getElementById('sobre')
     let propagandaDivs = document.getElementById('propaganda').querySelectorAll('div')
 
