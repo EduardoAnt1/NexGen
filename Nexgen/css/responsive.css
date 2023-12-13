@@ -130,3 +130,9 @@
     }
 
 }
+
+@media screen and (max-width: 798px) {
+    #casa_in {
+        opacity: 1;
+    }
+}
