@@ -17,7 +17,10 @@
         height: 400px ;
     }
 
-    
+    #container
+    {
+        height: 850px;
+    }
 
     #cta h1{
         color: var(--cor-primaria);
@@ -129,9 +132,6 @@
         font-weight: 600;
     }
 
-}
-
-@media screen and (max-width: 798px) {
     #casa_in {
         opacity: 1;
     }

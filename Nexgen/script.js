@@ -71,7 +71,7 @@ function updateNavAnchors()
 
 function appearOnScroll(e)
 {
-    if (window.innerWidth < 798)
+    if (window.innerWidth < 960)
         return 0;
 
     let casaIn = document.getElementById('casa_in')
@@ -116,7 +116,6 @@ function appearOnScroll(e)
             propagandaDivs[i].style.transform = 'translate(1000px, 0px)', propagandaDivs[i].style.opacity = 0
     }
 
-    console.log(window.scrollY)
 }
 
 includeHTML()
